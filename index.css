@@ -1,4 +1,32 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: black;
+}
+
+h1 {
+  padding-bottom: 10px;
+  
+  color: white;
+ 
+}
+
+.center{
+  padding-top: 30%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+
+img{
+  width: 24px;
+}
+.title{
+  background:blue;
+  text-align: center;
+}
+h5{
+  color: white;
+  text-align: center;
 }
