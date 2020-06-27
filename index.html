@@ -4,13 +4,222 @@
     <meta charset="utf-8">
     <title>Forms</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-    <link href= "index.css" rel="stylesheet"></link>
+             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+            <link href= "index.css" rel="stylesheet"></link>
   </head>
   <body>
+    <!--Navigation bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Form</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Application <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Reservation</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+     <!--background page-->
+
+    <div class=" jumbotron-fluid ">
+      <div class="container">
+        
+     
+        <div class="center">
+          <h1 >Form Templates</h1>
+         
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-primary launch-modal" data-toggle="modal" data-target="#application" aria-expanded="false" aria-controls="application">Application</button>
+          <button type="button" class="btn btn-outline-primary launch" data-toggle="modal" data-target="#reservation" aria-expanded="false" aria-controls="reservation">Reservation</button>
+          </div>
+          
+  
+       </div>
+    </div>
+
+ 
 
 
-    <script type="text/javascript" src="weather.js"></script>
+<!-- Modal -->
+<div class="modal fade " id="application" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header title">
+        <h5 class="modal-title" id="exampleModalLongTitle">Application</h5>
+        <button type="button" class="close btn btn-primary active" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="validationDefault01">Name</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="First name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="validationDefault02">Last Name</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="Phone">Phone</label>
+              <input type="text" class="form-control" placeholder="Format: 1234567890" required>
+            </div>
+          </div>
+          
+          <div class="mb-3 ">
+            <select class="custom-select" required>
+              <option value="">-Position Aplied-</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            
+          </div>
+    
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+            <label class="custom-control-label" for="customControlValidation2">Part Time</label>
+          </div>
+          <div class="custom-control custom-radio mb-6">
+            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+            <label class="custom-control-label" for="customControlValidation3">Full Time</label>
+          </div>
+          <div class="form-group md-3">
+            <label for="exampleFormControlTextarea1">What are your workplace skills?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+          </div>
+          <label>Upload Resume</label>
+          <div class="input-group col-md-6 is-invalid">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile">
+              <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
+            </div>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+<!--Second modal-->
+<div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header title">
+        <h5 class="modal-title " id="exampleModalLongTitle">Reservation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="validationDefault01">Name</label>
+              <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="validationDefault02">Last Name</label>
+              <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+              
+          </div>
+          
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><img src="icons/phone.svg"></div>
+              </div>
+            <input type="tel" class="form-control" placeholder="Format: 1234567890" pattern="[0-9]{9}" required>
+            </div>
+         
+         
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><img src="icons/email.png"></div>
+              </div>
+              <input type="email" class="form-control" placeholder="name@example.com" id="inputEmail4" required>
+            </div>
+          
+         
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><img src="icons/calendar.png"></div>
+              </div>
+              <input type="text" name="date" class="form-control" id="txtdate" placeholder="dd/mm/2020"  required>
+            </div>
+         
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><img src="icons/clock.svg"></div>
+                </div>
+                <select name="bmg_monday_start_hour" id="bmg_monday_start_hour" class="form-control bmg-hrs-mins-input">
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><img src="icons/person.svg"></div>
+                </div>
+                <select class="custom-select" id="validationCustom04" required>
+                  <option selected disabled value="">Person...</option>
+                  <option>1 person</option>
+                  <option>2 person</option>
+                  <option>3 person</option>
+                  <option>4 person</option>
+                  <option>5 person</option>
+                </select>
+              </div>
+            </div>
+              
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
+          </div>
+     
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
+    
+
+    <!-- javascript files -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+
+        <script src="javascript.js"></script>
+  
   </body>
 </html>
+ 
